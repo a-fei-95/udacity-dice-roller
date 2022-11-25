@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="dr_dice_number_text">1</string>
+    <string name="dr_dice_button_text">Roll</string>
+    <!-- TODO (04) Extract the text from the button to strings.xml -->
+</resources>
