@@ -25,16 +25,17 @@
     tools:context=".MainActivity"
     >
 
-    <TextView
-        android:id="@+id/dice_text"
+    <ImageView
+        android:id="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dr_dice_number_text"
-        android:textSize="36sp"
+        android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
         />
 
     <Button

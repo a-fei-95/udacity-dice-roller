@@ -41,7 +41,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
         with(binding) {
-            diceText.text = (1..6).random().toString()
+            diceImage.setImageResource((1..6).random().run {
+                when(this) {
+                    1 -> R.drawable.dice_1
+                    2 -> R.drawable.dice_2
+                    3 -> R.drawable.dice_3
+                    4 -> R.drawable.dice_4
+                    5 -> R.drawable.dice_5
+                    6 -> R.drawable.dice_6
+                    else -> R.drawable.empty_dice
+                }
+            })
         }
     }
 }
